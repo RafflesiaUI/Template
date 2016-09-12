@@ -4,7 +4,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.WebPages;
 
-namespace Rafflesia.UI.Template
+namespace Rafflesia
 {
     public class MvcApplication : HttpApplication
     {
