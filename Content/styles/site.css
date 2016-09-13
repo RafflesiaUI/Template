@@ -3,3 +3,59 @@ body {
     height: 100%;
     width: 100%;
 }
+
+body > .container-fluid {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 51px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+body > .container-fluid > .content {
+    height: 100%;
+}
+
+body > .footer {
+    background-color: #f5f5f5;
+    margin-top: -40px;
+    min-height: 40px;
+}
+
+body > .footer > p {
+    padding-top: 10px;
+}
+
+body > .navbar {
+    margin-bottom: 0;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    border: 0;
+    min-width: 250px;
+    position: fixed;
+    bottom: 40px;
+    top: 51px;
+    z-index: 1030;
+}
+
+.sidebar-fixed-left {
+    border-right: 1px solid #eee;
+    left: 0;
+}
+
+.sidebar-fixed-right {
+    border-left: 1px solid #eee;
+    right: 0;
+}
+
+.sidebar.collapsing {
+    height: auto;
+  -webkit-transition-property: width, visibility;
+       -o-transition-property: width, visibility;
+          transition-property: width, visibility;
+}
