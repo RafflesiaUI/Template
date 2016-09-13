@@ -6,8 +6,8 @@ namespace Rafflesia
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //RegisterScriptBundles(bundles);
-            //RegisterStyleBundles(bundles);
+            RegisterScriptBundles(bundles);
+            RegisterStyleBundles(bundles);
         }
 
         private static void RegisterScriptBundles(BundleCollection bundles)

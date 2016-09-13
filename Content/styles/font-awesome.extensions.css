@@ -1,0 +1,41 @@
+﻿.fa-stack.fa-3x {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    font-size: 2em;
+}
+
+.fa-stack.fa-4x {
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
+    font-size: 2.5em;
+}
+
+.fa-stack-3x,
+.fa-stack-4x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fa-stack-3x,
+.fa.fa-stack-3x {
+    font-size: 3em;
+}
+
+.fa-stack-4x,
+.fa.fa-stack-4x {
+    font-size: 3.5em;
+}
+
+.fa-stack > .fa-stack-3x + .fa-stack-2x {
+    font-size: 2em;
+    top: 10px;
+}
+
+.fa-stack > .fa-stack-4x + .fa-stack-3x {
+    font-size: 2.5em;
+    top: 12px;
+}
