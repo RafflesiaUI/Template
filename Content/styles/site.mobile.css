@@ -1,2 +1,56 @@
-﻿body {
+﻿html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body > .container-fluid {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 51px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+body > .navbar {
+    margin-bottom: 0;
+}
+
+body > .navbar > .navbar-btn-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body > .navbar > .navbar-btn-group > .navbar-btn,
+body > .navbar > .navbar-btn-group > .navbar-btn-group {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body > .navbar > .navbar-btn-group > .navbar-btn {
+    white-space: nowrap;
+    width: 1%;
+}
+
+body > .navbar > .navbar-btn-group > .navbar-btn > .btn {
+    border-width: 0;
+    padding: 10px 15px;
+    min-height: 50px;
+}
+
+body > .navbar .navbar-brand,
+body > .navbar .navbar-brand:hover,
+body > .navbar .navbar-brand:focus {
+    font-size: 22px;
+    color: #fff;
+}
+
+body > .navbar .navbar-btn-group > .navbar-btn + .navbar-brand {
+    padding-left: 0;
 }

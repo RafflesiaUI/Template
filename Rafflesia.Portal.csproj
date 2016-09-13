@@ -178,6 +178,9 @@
     </Content>
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Layout.mobile.cshtml" />
+    <Content Include="Views\Shared\_ViewLayout.cshtml" />
+    <Content Include="Views\Shared\_ViewLayout.mobile.cshtml" />
+    <Content Include="Views\Home\Index.mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

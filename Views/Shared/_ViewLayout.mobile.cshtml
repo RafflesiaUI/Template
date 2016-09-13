@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "_Layout.mobile.cshtml";
+
+    var previousUrl = string.Empty;
+    if (ViewBag.PreviousUrl is string) {
+        previousUrl = (string)ViewBag.PreviousUrl;
+    }
+}
+
+@section Styles {
+    @RenderSection("Styles", required: false)
+}
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-btn-group">
+        @if (!string.IsNullOrEmpty(previousUrl))
+        {
+            <div class="navbar-btn">
+                <a class="btn btn-link" href="@previousUrl">
+                    <i class="fa fa-chevron-left fa-2x"></i>
+                </a>
+            </div>
+        }
+        <div class="navbar-brand">
+            @ViewBag.Title
+        </div>
+        @RenderSection("Toolbar", required: false)
+        @if (IsSectionDefined("MoreActions"))
+        {
+            <div class="navbar-btn">
+                <a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v fa-2x"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    @RenderSection("MoreActions", required: false)
+                </ul>
+            </div>
+        }
+    </div>
+</nav>
+<div class="container-fluid">
+    @RenderBody()
+</div>
