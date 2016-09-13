@@ -25,6 +25,12 @@ namespace Rafflesia
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/Scripts/modernizr").Include(
                         "~/Content/scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/site").Include(
+                        "~/Content/scripts/site.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/Mobile/site").Include(
+                        "~/Content/scripts/site.mobile.js"));
         }
 
         private static void RegisterStyleBundles(BundleCollection bundles)

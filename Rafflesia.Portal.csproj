@@ -158,11 +158,15 @@
     <Content Include="Content\scripts\jquery-ui.js" />
     <Content Include="Content\scripts\modernizr-2.8.3.js" />
     <None Include="Content\scripts\_references.js" />
+    <Content Include="Content\scripts\site.mobile.js" />
+    <Content Include="Content\scripts\site.js" />
     <Content Include="Content\styles\bootstrap.css" />
     <Content Include="Content\styles\font-awesome.css" />
     <Content Include="Content\styles\font-awesome.extensions.css" />
     <Content Include="Content\styles\jquery-ui.css" />
     <Content Include="Content\styles\jquery-ui.structure.css" />
+    <Content Include="Content\styles\site.mobile.css" />
+    <Content Include="Content\styles\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -172,6 +176,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Layout.mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -180,7 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
