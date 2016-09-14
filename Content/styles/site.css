@@ -30,26 +30,43 @@ body > .footer > p {
 }
 
 body > .navbar {
+    padding: 0 15px;
     margin-bottom: 0;
 }
 
-.navbar-brand.collapsing {
+body > .navbar .navbar-brand {
+    padding: 15px 0;
+    width: 150px;
+}
+
+body > .navbar .navbar-brand.collapsing {
     height: 50px !important;
   -webkit-transition-property: width, visibility;
        -o-transition-property: width, visibility;
           transition-property: width, visibility;
 }
 
-.navbar-brand + .sidebar-toggle > .fa-stack > .fa-stack-1x:before {
+body > .navbar .navbar-brand + .sidebar-toggle > .fa-stack > .fa-stack-1x:before {
     content: "\f061";
 }
 
-.navbar-brand.in + .sidebar-toggle > .fa-stack > .fa-stack-1x {
+body > .navbar .navbar-brand.in + .sidebar-toggle > .fa-stack > .fa-stack-1x {
     left: -1px;
 }
 
-.navbar-brand.in + .sidebar-toggle > .fa-stack > .fa-stack-1x:before {
+body > .navbar .navbar-brand.in + .sidebar-toggle > .fa-stack > .fa-stack-1x:before {
     content: "\f060";
+}
+
+body > .navbar .navbar-logo {
+    float: left;
+    margin: 5px 10px 5px 0;
+    height: 40px;
+    width: 40px;
+}
+
+body > .navbar .navbar-nav > li {
+    float: left;
 }
 
 .sidebar {
@@ -80,6 +97,7 @@ body > .navbar {
 }
 
 .sidebar-toggle {
+    cursor: pointer;
     display: inline-block;
     margin-top: 7px;
 }
