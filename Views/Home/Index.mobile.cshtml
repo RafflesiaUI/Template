@@ -5,30 +5,22 @@
     ViewBag.PreviousUrl = Url.Action("Index", "Home");
 }
 
-@section Toolbar {
-    <div class="navbar-btn">
-        <a class="btn btn-link" href="#filterPanel" data-toggle="collapse">
-            <i class="fa fa-search fa-2x"></i>
+<ul class="tab-nav nav nav-pills">
+    <li class="active">
+        <a class="text-center" href="#dashboard" data-toggle="tab">
+            <i class="fa fa-list-alt fa-2x"></i>
         </a>
-    </div>
-    <div class="navbar-btn">
-        <a class="btn btn-link" href="#sortPanel" data-toggle="modal">
-            <i class="fa fa-sort-amount-asc fa-2x"></i>
+    </li>
+    <li>
+        <a class="text-center" href="#menu" data-toggle="tab">
+            <i class="fa fa-th fa-2x"></i>
         </a>
-    </div>
-}
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="dashboard">
 
-@section MoreActions {
-    <li>
-        <a href="#sortPanel" data-toggle="modal">
-            <i class="fa fa-sort-amount-asc fa-fw"></i> Sort By
-        </a>
-    </li>
-    <li class="divider"></li>
-    <li>
-        <a href="#"><i class="fa fa-plus fa-fw"></i> Add</a>
-    </li>
-    <li>
-        <a href="#"><i class="fa fa-print fa-fw"></i> Print</a>
-    </li>
-}
+    </div>
+    <div class="tab-pane" id="menu">
+    </div>
+</div>
