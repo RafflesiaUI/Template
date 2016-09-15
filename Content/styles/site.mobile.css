@@ -47,10 +47,17 @@ body > .navbar > .navbar-btn-group > .navbar-btn > .btn {
 body > .navbar .navbar-brand,
 body > .navbar .navbar-brand:hover,
 body > .navbar .navbar-brand:focus {
+    float: none;
     font-size: 22px;
     color: #fff;
+    padding: 15px 10px;
 }
 
-body > .navbar .navbar-btn-group > .navbar-btn + .navbar-brand {
-    padding-left: 0;
+body > .navbar .navbar-btn-group > .navbar-btn:first-child > .navbar-logo {
+    margin-left: 5px;
+}
+
+body > .navbar .navbar-logo {
+    height: 40px;
+    width: 40px;
 }
