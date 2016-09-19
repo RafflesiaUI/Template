@@ -62,6 +62,14 @@ body > .navbar .navbar-logo {
     width: 40px;
 }
 
+.dropdown-menu > li > a {
+    padding: 15px 20px;
+}
+
+.dropdown-menu .divider {
+    margin: 0;
+}
+
 .tab-nav > li {
     display: table-cell;
     float: none;

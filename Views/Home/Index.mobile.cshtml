@@ -5,6 +5,31 @@
     ViewBag.PreviousUrl = Url.Action("Index", "Home");
 }
 
+@section Toolbar {
+    <div class="navbar-btn">
+        <a class="btn btn-link dropdown-toggle" href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right col-xs-12">
+            <li class="dropdown-header media">
+                <div class="media-left media-middle">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-3x"></i>
+                        <i class="fa fa-user fa-stack-2x fa-inverse"></i>
+                    </span>
+                </div>
+                <div class="media-body media-middle">
+                    <h5><strong>Lai Guan Siong</strong><br />wes.01180@gmail.com</h5>
+                </div>
+            </li>
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">Change Password</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;Logout</a></li>
+        </ul>
+    </div>
+}
+
 <ul class="tab-nav nav nav-pills">
     <li class="active">
         <a class="text-center" href="#dashboard" data-toggle="tab">
@@ -19,7 +44,6 @@
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="dashboard">
-
     </div>
     <div class="tab-pane" id="menu">
     </div>
