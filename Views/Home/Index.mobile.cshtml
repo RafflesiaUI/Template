@@ -2,7 +2,6 @@
     Layout = "~/Views/Shared/_ViewLayout.cshtml";
 
     ViewBag.Title = "Rafflesia UI";
-    ViewBag.PreviousUrl = Url.Action("Index", "Home");
 }
 
 @section Toolbar {
@@ -22,10 +21,16 @@
                     <h5><strong>Lai Guan Siong</strong><br />wes.01180@gmail.com</h5>
                 </div>
             </li>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Change Password</a></li>
+            <li>
+                <a href="#"><i class="fa fa-fw fa-user"></i>&nbsp;Edit Profile</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-fw fa-lock"></i>&nbsp;Change Password</a>
+            </li>
             <li class="divider"></li>
-            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;Logout</a></li>
+            <li>
+                <a href="#"><i class="fa fa-fw fa-power-off"></i>&nbsp;Logout</a>
+            </li>
         </ul>
     </div>
 }

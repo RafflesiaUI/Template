@@ -54,12 +54,16 @@ body > .navbar .navbar-brand:focus {
 }
 
 body > .navbar .navbar-btn-group > .navbar-btn:first-child > .navbar-logo {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 body > .navbar .navbar-logo {
     height: 40px;
     width: 40px;
+}
+
+.dropdown-menu {
+    padding: 0;
 }
 
 .dropdown-menu > li > a {
