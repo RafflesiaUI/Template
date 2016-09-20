@@ -26,9 +26,9 @@
     </div>
         <div id="user-panel" class="dropdown pull-right">
             <a href="#" class="dropdown-toggle media" data-toggle="dropdown">
-                <div class="media-body media-middle user-profile">
-                    Welcome
+                <div class="media-body media-middle user-profile hidden-xs">
                     <div>Lai Guan Siong</div>
+                    <div>wes.01180@gmail.com</div>
                 </div>
                 <div class="media-right media-middle">
                     <i class="fa fa-2x fa-cog"></i>
@@ -36,7 +36,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-right">
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-user"></i>&nbsp;Edit Profile</a>
+                    <a href="#"><i class="fa fa-fw fa-user"></i>&nbsp;My Profile</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-lock"></i>&nbsp;Change Password</a>
@@ -50,7 +50,26 @@
 </nav>
 <div class="container-fluid">
     <div class="sidebar sidebar-fixed-left collapse in">
-        
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a class="text-center" href="#navigation" data-toggle="tab">
+                    <i class="fa fa-bars"></i>&nbsp;Navigation
+                </a>
+            </li>
+            <li>
+                <a class="text-center" href="#administration" data-toggle="tab">
+                    <i class="fa fa-cogs"></i>&nbsp;Administration
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="navigation">
+
+            </div>
+            <div class="tab-pane" id="administration">
+
+            </div>
+        </div>
     </div>
     <div class="content">
         @RenderBody()
