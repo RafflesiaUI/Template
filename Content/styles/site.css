@@ -75,6 +75,12 @@ body > .navbar .navbar-nav > li {
     float: left;
 }
 
+.breadcrumb {
+    border-radius: 0;
+    padding: 10px 15px;
+    margin-bottom: 0;
+}
+
 .dropdown-menu {
     padding: 0;
 }
@@ -139,6 +145,10 @@ body > .navbar .navbar-nav > li {
     .sidebar.collapse.in + .content {
         padding-left: 280px;
     }
+}
+
+#company-file {
+    padding: 15px;
 }
 
 #user-panel > a {

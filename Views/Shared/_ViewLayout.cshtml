@@ -50,15 +50,23 @@
 </nav>
 <div class="container-fluid">
     <div class="sidebar sidebar-fixed-left collapse in">
+        <div id="company-file">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-database"></i>
+                </span>
+                <select class="form-control"></select>
+            </div>
+        </div>
         <ul class="nav nav-tabs">
             <li class="active">
                 <a class="text-center" href="#navigation" data-toggle="tab">
-                    <i class="fa fa-bars"></i>&nbsp;Navigation
+                    <i class="fa fa-bars"></i>&nbsp;&nbsp;Navigation
                 </a>
             </li>
             <li>
                 <a class="text-center" href="#administration" data-toggle="tab">
-                    <i class="fa fa-cogs"></i>&nbsp;Administration
+                    <i class="fa fa-cogs"></i>&nbsp;&nbsp;Administration
                 </a>
             </li>
         </ul>
@@ -72,6 +80,12 @@
         </div>
     </div>
     <div class="content">
+        @if (IsSectionDefined("Breadcrumb"))
+        {
+            <ol class="breadcrumb">
+                @RenderSection("Breadcrumb", required: false)
+            </ol>
+        }
         @RenderBody()
     </div>
 </div>
