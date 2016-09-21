@@ -5,17 +5,7 @@
 }
 
 @section PageHeader {
-    <a id="company-file" class="btn-link btn-block media dropdown-toggle" data-toggle="dropdown">
-        <div class="media-body media-middle">
-            Rafflesia UI
-        </div>
-        <div class="media-right media-middle">
-            <i class="fa fa-chevron-down"></i>
-        </div>
-    </a>
-    <div class="dropdown-menu col-xs-12 col-sm-8 col-md-6">
-        List of companies
-    </div>
+    @Html.Partial("Lookup/CompanyFile")
 }
 
 @section Toolbar {

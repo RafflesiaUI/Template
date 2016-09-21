@@ -101,6 +101,74 @@ body > .navbar .navbar-logo {
     overflow: auto;
 }
 
+.view .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.view .modal-content {
+    border: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.view .modal-header {
+    padding: 0;
+    min-height: 50px;
+}
+
+.view .modal-header > .navbar-btn-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.view .modal-header > .navbar-btn-group > .navbar-btn,
+.view .modal-header > .navbar-btn-group > .navbar-btn-group {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.view .modal-header > .navbar-btn-group > .navbar-btn {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.view .modal-header > .navbar-btn-group > .navbar-btn > .btn {
+    border-width: 0;
+    padding: 10px 15px;
+    min-height: 50px;
+}
+
+.view .modal-header .navbar-brand,
+.view .modal-header .navbar-brand:hover,
+.view .modal-header .navbar-brand:focus {
+    float: none;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px 10px;
+}
+
+.view .modal-header .navbar-btn-group > .navbar-btn:first-child > .navbar-logo {
+    margin-left: 10px;
+}
+
+.view .modal-header .navbar-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.view .modal-body {
+    height: 100%;
+    padding-top: 51px;
+    overflow: hidden;
+}
+
 #company-file {
     font-size: 22px;
     padding: 10px;
