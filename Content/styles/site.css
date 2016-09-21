@@ -93,6 +93,10 @@ body > .navbar .navbar-nav > li {
     margin: 0;
 }
 
+.media-body {
+    width: 100%;
+}
+
 .sidebar {
     background-color: #f5f5f5;
     border: 0;
@@ -178,6 +182,7 @@ body > .navbar .navbar-nav > li {
     min-width: 180px;
     font-size: 12px;
     font-weight: 700;
+    width: auto;
 }
 
 @media (min-width: 768px) {

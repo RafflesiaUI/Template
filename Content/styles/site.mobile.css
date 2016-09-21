@@ -74,6 +74,10 @@ body > .navbar .navbar-logo {
     margin: 0;
 }
 
+.media-body {
+    width: 100%;
+}
+
 .tab-nav > li {
     display: table-cell;
     float: none;
@@ -95,4 +99,15 @@ body > .navbar .navbar-logo {
     padding: 5px;
     height: 100%;
     overflow: auto;
+}
+
+#company-file {
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#company-file:hover > .media-right,
+#company-file:focus > .media-right {
+    border-left: 1px solid #9d9d9d;
 }
